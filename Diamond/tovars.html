@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+	<title>Laba1/Tovars</title>
+	<link rel="stylesheet" type="text/css" href="Style/styleTovar.css">
+    <link rel="stylesheet" type="text/css" href="Style/bot.css">
+    <style type="">
+    </style>
+</head>
+
+<body> 
+    <table id="verh">
+        <td style="width: 25%;" id="glav"><a href="laba1.html"><img src="Style/img/glav3.png"></a></td>
+        <td id="zag"><h1>Диаманд</h1></td>
+
+        
+        <td id="form" style="width:40% ;">
+
+        <div id="s1" style="color: #7c0000;">логин:<input type="search" name="q" placeholder=""></div><br> 
+                <div id="s1" style="color: #7c0000;">пароль:    <input type="search" name="q" placeholder=""></div><br>
+                <div id="s2"><input type="submit" value="Войти/Личный кабинет" style="float:left;" onclick="window.open('LK.html')" /><input style="float:right;" readonly type="submit" onclick="window.open('registr2.html')" value="Регистрация"/></div>
+        </td>
+	</table>
+
+    <table id="pol">
+        <p>
+            <td id="swe"><a href="tovars.html">Каталог</a></td>
+            <td id="swe"><a href="contact.html">Обратная связь/Контакты</a></td>
+        <td id="swe"><a href="atel.html">Мы сотрудничае</a></td>
+        <td id="swe"><a href="col.html">Обработка камня</a></td></p>
+    </table>
+   
+<table id="sort" style="width: 80%; float:right; margin-right: 10%; border: 0px;background-color: #dddddd;margin-top: 16px;" >
+    <tr>
+        <th style="width: 25%; float: left;padding: 0px;text-align:left;">
+        <div id="blleft"  >
+            <p>
+                <br>
+             <a href="new.html">Драгоценные камни</a><br>
+             <a href="akc.html">Натуральные камни</a><br></p>
+        </div>
+    </th>
+         <th style=" width: 75%; float:right;margin-right:0%;padding: 0px;text-align:left;">
+        <div id="osnov">
+            <div class="popup">  
+                <div class="popup__body">
+                <div id="popup__Info" class="popup__Info" data-target="form-popup">
+                    <table style=" width:100%; border:none;margin-top:10px; height: 98%;
+                    margin-left:0;margin-right: 10px;margin-bottom: 0; border-spacing: 0;">
+                   <tr> <th rowspan="7" style="width:45%;"><img id="PUP__img" class="PUP__img" src=""> </th>    
+                    <th colspan="2"><input readonly type="text" value="" id="PUP__name"class="PUP__name Info__input" style="float:left;font-size: 1.1em;color: #7c0000; font-family: 'century gothic';font-weight: lighter; width: 95%;height:50px ;"></th> </tr>
+                    <tr><th colspan="2"><input readonly type="text" id="PUP__price" class="PUP__price Info__input" style="float:right ;font-size: 1.2em;color: #fb0000; font-family: 'comic sans ms';font-weight: lighter;width: 95%;height:50px ;"></th></tr>
+                    <tr><th><p class="Info__p">Дизаин</p></th><th><input readonly type="text" id="PUP__fashion" class="PUP__fashion Info__input" style="float:left;font-size: 1.2em;color: #250000; font-family: 'Times New Roman';font-weight: normal;"></th></tr>
+                    <tr ><th><p class="Info__p">Бренд</p></th><th ><input readonly type="text" id="PUP__producer" class="PUP__producer Info__input" style="float:left;font-size: 1.2em;color: #250000; font-family: 'Times New Roman';font-weight: normal;"></th></tr>
+                    <tr><th><p class="Info__p">Металл</p></th><th><input readonly type="text"id="PUP__metall" class="PUP__metall Info__input" style="float:left;font-size: 1.2em;color: #250000; font-family: 'Times New Roman';font-weight: normal;"></th></tr>
+                    <tr><th><p class="Info__p">Вставка</p></th><th><input readonly type="text"id="PUP__insert" class="PUP__insert Info__input" style="float:left;font-size: 1.2em;color: #250000; font-family: 'Times New Roman';font-weight: normal;"></th></tr>
+                    <tr><th colspan="2"style="height:100px;"><a href="bolvan.html"> <button class="Info__but">Больше информации о товаре</button></a></th></tr>
+                </table>
+            </div></div></div>
+           <selection>
+                <div class="imgOut" id="imgOut"></div>
+            </selection>
+
+            
+    </div>
+</th>
+</tr>
+</table>
+<table id="fin">
+
+<th> <h5>Компания ©Диаманд "Все права защищены"</h5></th>
+</table>
+<script src="script/tovar.js"></script>
+<script src="script/logtovar.js"></script>
+<script src="script/bot.js"></script>
+</body>
+</html>

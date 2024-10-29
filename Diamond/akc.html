@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Laba1/NK</title>
+	<link rel="stylesheet" type="text/css" href="Style/styleakc.css">
+    <link rel="stylesheet" type="text/css" href="Style/bot.css">
+    <style type="">
+    </style>
+</head>
+<script type="text/javascript">
+    
+    var locations = new Array("Style/img/pic/23.jpg","Style/img/pic/24.jpg","Style/img/pic/25.jpg","Style/img/pic/26.jpg","Style/img/pic/27.jpg","Style/img/pic/28.jpg","Style/img/pic/29.jpg","Style/img/pic/30.jpg","Style/img/pic/31.jpg","Style/img/pic/32.jpg","Style/img/pic/33.jpg");
+    var nameover=new Array("Аквамарин","Лабрадорит","Перламутр","Пьестерсит","Яшма","Бирюза","Гематит","Яшма","Соладир","Родонит","Амазонит");
+    var currentImage = 0;
+    function nextImage() {
+        currentImage++;
+        if (currentImage == locations.length) 
+            currentImage = 0;
+        document.images["picture"].src = locations[currentImage];
+        document.write.src = nameover[currentImage];
+        return false;} 
+    function previousImage() {
+        currentImage--;
+        if (currentImage = 0) 
+            currentImage == locations.length ;
+        document.images["picture"].src = locations[currentImage];
+        document.getElementById.src = nameover[currentImage];
+        return false;} 
+    </script>
+
+<body>
+    <table id="verh">
+        <td style="width: 25%;" id="glav"><a href="laba1.html"><img src="Style/img/glav3.png"></a></td>
+        <td id="zag"><h1>Диаманд</h1></td>
+
+        
+        <td id="form" style="width:40% ;">
+
+        <div id="s1" style="color: #7c0000;">логин:<input type="search" name="q" placeholder=""></div><br> 
+                <div id="s1" style="color: #7c0000;">пароль:    <input type="search" name="q" placeholder=""></div><br>
+                <div id="s2"><input type="submit" value="Войти/Личный кабинет" style="float:left;" onclick="window.open('LK.html')" /><input style="float:right;" readonly type="submit" onclick="window.open('registr2.html')" value="Регистрация"/></div>
+        </td>
+	</table>
+
+    <table id="pol">
+        <p>
+            <td id="swe"><a href="tovars.html">Каталог</a></td>
+            <td id="swe"><a href="contact.html">Обратная связь/Контакты</a></td>
+        <td id="swe"><a href="atel.html">Мы сотрудничае</a></td>
+        <td id="swe"><a href="col.html">Обработка камня</a></td></p>
+    </table>
+   
+<table id="sort" style="width: 80%; float:right; margin-right: 10%; border: 0px;background-color: #dddddd;margin-top: 16px;" >
+    <tr>
+        <th style="width: 25%; float: left;padding: 0px;text-align:left;">
+        <div id="blleft"  >
+            <p>
+                <br>
+             <a href="new.html">Драгоценные камни</a><br>
+             <a href="akc.html">Натуральные камни</a><br></p>
+        </div>
+    </th>
+     <th style=" width: 75%; float:right;margin-right:0%;padding: 0px;text-align:left;">
+        <div id="osnov">
+        <br>
+        <h2> Натуральные камни</h2>
+        
+        <div id="kadr">
+            <a href="#" onclick="return nextImage()"><img src="Style/img/11.png"></a>
+            <img src="Style/img/pic/23.jpg" name="picture"/>    <a href="#" onclick="return previousImage()"><img src="Style/img/10.png"></a>
+        </div>
+
+
+        <h5>Человека давно интересовали загадки природных минералов. И не зря: ведь камни издавна использовались не только в качестве украшений, но и как сильные магические и лечебные амулеты. Если ранее человек мог использовать для себя только те минералы, которые могли найтись на территории его дома или участка, то сегодня мы можем получить заветный камешек с любого уголка земли.</h5>
+        <h5>Несмотря на то, что многие интересуются именно драгоценными кристаллами, полудрагоценные самородки не менее прекрасны как по внешнему виду, так и в качестве вставок в украшения. Об этих самоцветах сегодня и пойдет речь.</h5>
+        <embed src="Style/img/1234.pdf" width="90%" height="500px" />
+        <br>
+    </div>
+</th>
+</tr>
+</table>
+<table id="fin">
+
+<th> <h5>Компания Диаманд "Все права защищены"</h5></th>
+</table>
+<script src="script/bot.js"></script>
+</body>
+</html>

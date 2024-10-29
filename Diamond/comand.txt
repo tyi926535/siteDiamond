@@ -1,0 +1,34 @@
+php artisan serve  --- Подключение Laver
+
+php artisan migrate:rollback --step=1    отмена миграции
+php artisan migrate    миграция
+2 php artisan migrate:fresh --seed
+
+php artisan make:controller StaticPageController Создание контроллера
+php artisan make:model StaticPage  Создание модели
+php artisan make:migration create_staticpages_table Создание миграции
+
+3 php artisan make:seeder StaticPageSeeder Создание заполнителя базы данных
+php artisan make:factory StaticPageFactory  Создание 
+php artisan db:seed --class=StaticPageSeeder загрузить seeder
+1 php artisan db:wipe   очищение
+
+
+$required perm= 'shop.edit';
+foreach (array('shop.edit') as $user_perm){
+if(fnmatch($user_perm,$required_perm)){
+echo "ok<br>";
+} else echo "error<br>";
+}
+
+php artisan config:cache Обновить конфигурацию
+
+
+
+<?php echo $product->image !=0 ? $product->image:('/Style/nf.jpg'); ?>
+
+Vpn man apt-get
+
+
+nano /etc/apache2/ports.conf
+php artisan serve --host=0.0.0.0 --port=80

@@ -1,0 +1,279 @@
+html,body{
+	background-color:#F8F8F8 ;
+    height: 100%;
+
+}
+
+#verh{
+    background-color: #dddddd; 
+    height: 120px; 
+    margin-left: 10%; 
+    width: 80%;
+	background-size: cover;
+    
+}
+#verh h1{
+    text-decoration: none;
+	font-size: 2.5em;
+	color:#7c0000;
+	margin-top: 40px;
+    float: left; 
+    margin-left: 5%;
+}
+#zag{
+    float: left; 
+
+}
+
+    #glav img{
+        height: 120px;
+        float: left;
+        margin-left: 20%;
+        margin-top: 10px;  
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #form {
+        margin-right: 4%; 
+        margin-top: 20px;
+        width: 20%;
+        float:right;
+    }
+    #s1 input{
+        margin-left: 5%;
+        height: 20px;
+        margin: 0%;
+        width: 60%; 
+        float:right;
+        color: #7c0000;
+    }
+    #s2 input{
+        height: 20px;
+        float:right;
+        color: #7c0000;
+    }
+    #s1 h3{
+        text-decoration: none;
+        font-size: 0.8em;
+        color: #7c0000;
+        float:right;
+        width: 50%;
+        margin: 20%;
+        margin-right: 5%;
+        padding: 0%;
+    }
+#pol{
+    background-color: #F8F8F8;
+    width: 80%;    
+    margin-left: 10%; 
+	height: 30px;  
+	background-size: cover;
+
+}
+#pol a{
+    
+	font-size: 1em;
+	font-weight: 1em;
+    margin-top: 5px;
+	margin-left: 20%;
+	color:#b80000;
+}
+#pol td{
+    width: 20%;
+}
+#osnov {
+    min-height: 100%;
+    margin-bottom: 80px;
+    
+}
+#blleft{
+    background-color: #dddddd;
+    
+    min-height:100% ;
+
+}
+
+
+#blleft a{  
+	font-size: 1.2em;
+	font-weight: 1em;
+    font-weight: lighter;
+	margin-left: 25%;
+   
+    margin-top: 50px;
+    float:center;
+	color:#b80000;
+}
+#osnov h2{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: lighter;
+    color:#7c0000;
+}
+
+
+
+#osnov h5{
+    font-size: 1.5em;
+    color:#7c0000;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    width: 80%;
+}
+
+
+
+#osnov h3{
+    font-size: 1.2em;
+    color:#7c0000;
+    width: 85%;
+    font-family: 'comic sans ms';
+}
+
+#osnov a{
+    font-size: 1.2em;
+    color:#b80000;
+    font-family: 'Luminari';
+}
+#osnov h2{
+    font-size: 1.7em;
+    color:#7c0000;
+    font-family: 'Luminari';
+    width: 80%;
+}
+#osnov h5{
+    font-size:1em;
+    color:#7c0000;
+    font-family: 'century gothic';
+    width: 90%;
+}
+
+
+#fin {
+    background-color: #7c0000;
+    border:none;
+    width:100%;
+    min-height: 100px;
+}
+#fin h5{
+    color: #ffffff;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: lighter;
+    
+    float:center; 
+}
+
+.TR{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 45px;
+    width: 80%;
+    max-width: 90%;
+}
+.tov{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tova__img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 0 0 0;
+}
+.tova__name{
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1em;
+    font-weight: lighter;
+    font-size: 1.2em;
+    font-weight: 1.5em;
+    float:center;
+	color:#b80000;
+    font-family: 'Luminari';
+}
+.tova__but{
+    border-radius: 50px;
+    width: 50%;
+    border:none;
+    float:center;
+    background: #ff0404c6;
+    color:#ffffff;
+    height: 40px;
+
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0 25%;
+}
+
+.PUP__img{
+    width: 100%;
+}
+.Info__input{
+    border: none;
+    background-color: #ffffff;
+}
+.Info__p{
+    font-size: 1.2em;
+    color: #7c0000;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    float:left;
+}
+.Info__but{
+    background-color: #da1717;
+    color: #ffffff;
+    font-family: 'Times New Roman';
+    font-size: 1.2em;
+    font-weight: lighter;
+    float:center;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0,0;
+
+}
+
+
+.popup__Info{
+    background-color: #ffffff;
+    width:50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}    
+.popup__Info--visible{
+    display: block;
+}    
+
+
+.popup__body{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #71000078;
+    top: 0;
+    left:0;
+	bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.popup__body--visible{
+    opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+        

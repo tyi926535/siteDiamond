@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <title>Laba1/Reg</title>
+	<link rel="stylesheet" type="text/css" href="Style/styleregistr.css">
+    <link rel="stylesheet" type="text/css" href="Style/bot.css">
+    <style type="">
+    </style>
+     <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
+    <script>
+    
+        function CheckPswd ()
+        {
+            var pw1=document.getElementById("psw");
+            var pw2=document.getElementById("psw-repeat");
+            var fr1=document.getElementById("fr0");
+            if(pw1.value!=pw2.value)
+            {
+                alert("пароли не совпадают");
+                return false;
+            }else{
+                //alert("регистрация завершена");
+                if(fr1.value=="fr0")
+                    {
+                        alert("выберете фрукт");
+                        return false;
+                     }else{
+                        //alert("регистрация завершена");
+                        return true;
+                        }
+            }
+        }
+        function asaa() {alert("регистрация завершена")}
+       
+</script>
+</head>
+
+<body>
+    <table id="verh">
+        <td style="width: 25%;" id="glav"><a href="laba1.html"><img src="Style/img/glav3.png"></a></td>
+        <td id="zag"><h1>Диаманд</h1></td>
+
+        
+        <td id="form" style="width:40% ;">
+
+        <div id="s1" style="color: #7c0000;">логин:<input type="search" name="q" placeholder=""></div><br> 
+                <div id="s1" style="color: #7c0000;">пароль:    <input type="search" name="q" placeholder=""></div><br>
+                <div id="s2"><input type="submit" value="Войти/Личный кабинет" style="float:left;" onclick="window.open('LK.html')" /><input style="float:right;" readonly type="submit" onclick="window.open('registr2.html')" value="Регистрация"/></div>
+        </td>
+	</table>
+
+    <table id="pol">
+        <p>
+            <td id="swe"><a href="tovars.html">Каталог</a></td>
+            <td id="swe"><a href="contact.html">Обратная связь/Контакты</a></td>
+        <td id="swe"><a href="atel.html">Мы сотрудничае</a></td>
+        <td id="swe"><a href="col.html">Обработка камня</a></td></p>
+    </table>
+   
+<table id="sort" style="width: 80%; float:right; margin-right: 10%; border: 0px;background-color: #dddddd;margin-top: 16px;" >
+    <tr>
+        <th style="width: 25%; float: left;padding: 0px;text-align:left;">
+        <div id="blleft"  >
+            <p>
+                <br>
+             <a href="new.html">Драгоценные камни</a><br>
+             <a href="akc.html">Натуральные камни</a><br></p>
+        </div>
+    </th>
+     <th style=" width: 75%; float:right;margin-right:0%;padding: 0px;text-align:left;margin-bottom: 80px;">
+        <div id="osnov">
+            <br>
+            <table class="container" style="float: left; margin-left: 15%;">
+                <form onsubmit="asaa();" action="LK.html" method="GET" >
+                <tr> <th><h4>Фамилия</h4></th> <th><input type="text" id="fam" name="fam" placeholder="Введите фамилию"  required></th></tr>
+                <tr> <th><h4>Имя</h4></th> <th><input type="text" id="nam" name="nam" placeholder="Введите имя"  required></th></tr>
+                <tr> <th><h4>Дата Рождения</h4></th> <th><input type="text" id="dataR" name="dataR"  placeholder="Введите дату" required></th></tr>
+               <tr> <th><h4>Номер телефона</h4></th> <th><input type="tel" name="mobile" id="phone" placeholder="+7(999)999-99-99" required> </th></tr>
+                <tr> <th><h4>Email</h4></th> <th><input name="n-email" type="email" id="email" placeholder="Ваш E-mail" required></th></tr>
+                <tr> <th><h4>Пароль</h4></th> <th><input id="psw" type="password" placeholder="Пароль" required ></th></tr>
+                <tr> <th><h4>Введите пароль ещё раз   </h4></th> <th><input id="psw-repeat"  type="password"  placeholder="Повторите пароль" required></th></tr>
+                <tr><th><h4>Не забудьте ->>>> </h4></th><th>
+                    <select id="fr0" name="fruit" required>
+                        <option value="fr0" selected disabled>Выберите фрукт</option>
+                        <option value="fr1">Абрикос</option>
+                        <option value="fr2">Айва</option>
+                        <option value="fr3">Апельсин</option>
+                        <option value="fr4">Бананы</option>
+                        <option value="fr5">Груша</option>
+                        <option value="fr6">Дуриан</option>
+                        <option value="fr7">Манго</option>
+                        <option value="fr8">Персик</option>
+                        <option value="fr9">Яблоко</option>
+                      </select>
+
+
+                </th></tr>
+
+                <tr> <th><input type="checkbox" checked="checked" style="float:right;"></th><th>Получать рассылку</th></tr>
+                <tr> <th><input type="checkbox" id="chec" onchange="document.getElementById('mc-embedded-subscribe').disabled = !this.checked" style="float:right;"required></th><th>Я соглашаюсь с политикой конфиденциальности</th></tr>
+                    
+                <tr> <th ><input type="submit" id="mc-embedded-subscribe " onclick="return CheckPswd ();"  value="Регистрация"  style="float:center;"></th></tr>
+                <ul class="list"></ul>
+            
+          </form> </table> 
+           
+    </div>
+</th>
+</tr>
+
+</table>
+<table id="fin">
+<th> <h5>Компания ©Диаманд "Все права защищены"</h5></th>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+<script>
+$(document).ready(function() {
+        $("#phone").mask("+7 (999) 99-99-999");
+        $("#dataR").mask("99/99/9999");
+      });
+</script>
+
+<script src="script/bot.js"></script>
+</body>
+</html>

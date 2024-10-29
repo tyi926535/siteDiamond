@@ -1,0 +1,119 @@
+#btn1024{
+    width: 110px;
+    height: 80px;
+    border-radius: 60px;
+    border: none;
+    top: 85%;
+    left: 92%;
+    background: #ff0000;
+    color: #ffffff;
+    font-family: 'comic sans ms';
+    font-size: 1.8em;
+    position: fixed;
+    
+}
+#blok1024{
+    width: 25%;
+    height: 500px;
+    border-radius: 60px 60px 0 60px;
+    background: #ffe0d9;
+    top: 17%;
+    left: 73%;
+    position: fixed;
+    display: none;
+}
+
+#nz1024{
+    width: 70%;
+    height: 25px;
+    border: none;
+    resize: none;    ;
+    font-size: 1.1em;
+    color:#000000;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    position: absolute; 
+    padding: 10px;
+    padding-left: 20px;
+    bottom: 0;
+    border-radius:  0 0 0 100px;
+
+}
+#bn1024{
+    position: absolute; 
+    bottom: 0;
+    left:75%;
+    width: 25%;
+    height: 45px;
+    border: none;
+    background: #ff0000;
+    color: #ffffff;
+    font-family: 'comic sans ms';
+    font-size: 1.8em;
+}
+#mes1024{
+    width: 100%;
+    height: 440px;
+    border-radius:60px 60px  0 0;
+    background: #ffffff00;
+                                   overflow: auto;
+    padding: 20px 20px 0 0;
+    position: relative;
+
+}
+#hi1024{
+    border-radius: 60px;
+    color:#000000;
+    padding: 20px;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    background: #ffffff;
+    width: 60%;
+    resize: none;
+    font-size: 1em;
+}
+#menu1024{
+    border-radius: 60px;
+    color:#000000;
+    padding: 20px;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    background: #ffffff;
+    width: 60%;
+    resize: none;
+    font-size: 1em;
+}
+#polt1024{
+    border-radius: 60px;
+    color:#000000;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    background: #ffcf94;
+    border: none;
+    width: 60%;
+    margin-right: 10%;
+    resize: none;
+    font-size: 1em;
+    padding-left: 20px;
+    height: 25px;
+    float:right;
+    
+    margin-top: 5px;
+}
+#myt1024{
+    border-radius: 60px;
+    color:#000000;
+    padding: 10px;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+    background: #ffffff;
+    width: 60%;
+    resize: none;
+    font-size: 1em;
+    padding-left: 20px;
+    height: 40px;
+    margin-top: 5px;
+
+}
+
+

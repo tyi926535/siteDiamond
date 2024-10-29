@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     
+<script>     
+</script>
+
+    <meta charset="utf-8">
+	<title>Laba1/LK</title>
+	<link rel="stylesheet" type="text/css" href="Style/stylelk.css">
+    <link rel="stylesheet" type="text/css" href="Style/bot.css">
+    <style type="">
+    </style>
+</head>
+
+<body>
+    <table id="verh">
+        <td style="width: 25%;" id="glav"><a href="laba1.html"><img src="Style/img/glav3.png"></a></td>
+        <td id="zag"><h1>Диаманд</h1></td>
+
+        
+        <td id="form" style="width:40% ;">
+
+        <div id="s1" style="color: #7c0000;">логин:<input type="search" name="q" placeholder=""></div><br> 
+                <div id="s1" style="color: #7c0000;">пароль:    <input type="search" name="q" placeholder=""></div><br>
+                <div id="s2"><input type="submit" value="Войти/Личный кабинет" style="float:left;" onclick="window.open('LK.html')" /><input style="float:right;" readonly type="submit" onclick="window.open('registr2.html')" value="Регистрация"/></div>
+        </td>
+	</table>
+    <table id="pol">
+        <p>
+            <td id="swe"><a href="tovars.html">Каталог</a></td>
+            <td id="swe"><a href="contact.html">Обратная связь/Контакты</a></td>
+        <td id="swe"><a href="atel.html">Мы сотрудничае</a></td>
+        <td id="swe"><a href="col.html">Обработка камня</a></td></p>
+    </table>
+    
+    
+    <table id="sort" style="width: 80%; float:right; margin-right: 10%; border: 0px;background-color: #dddddd;margin-top: 16px;">
+     <tr>
+         <th style="width: 25%; float: left;padding: 0px;text-align:left;">
+         <div id="blleft"  >
+             <p>
+                 <br>
+                 <a href="col.html">Обработка камня</a><br>
+                 <a href="atel.html">Мы сотрудничаем</a><br>
+                 <a href="new.html">Драгоценные камни</a><br>
+                 <a href="akc.html">Натуральные камни</a><br></p>
+         </div>
+     </th>
+
+     <th style=" width: 75%; float:right;margin-right:0%;padding: 0px;text-align:left;margin-bottom: 80px;">
+        <div id="osnov">
+            <br>
+            <table class="container" style="float: left; margin-left: 5%;">
+                <form  enctype="multipart/form-data"><tr><th rowspan="6" style="width:10%;">
+                        <nav class="foto">
+                            <ul class="foto-doble">
+                                <li><img class="pain" id="pain" style="width: 70%;float:initial;" src = "Style/img/notava.jpg">
+                        <label class="ava-doble">
+                            <input type="file" id="avatar" hidden="hidden" onchange=" dobleF(event)" name="avatar"accept="image/png, image/jpeg,image/jpg">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </label>
+            </li></ul></nav></th></tr>
+                    <tr> <th><input type="text" id="f" name="f" value="Соловьёв"  readonly style="float:right ; width:70%;font-size: 1.5em;"></th> <th><input style=" width:50%;font-size: 1.5em;" type="text" id="n" name="n" value="Григорий" readonly></th></tr>
+                    <tr> <th><h4>Дата Рождения</h4></th> <th><input type="text" id="d" name="d" value="16/04/2000" readonly></th></tr>
+                   <tr> <th><h4>Номер телефона</h4></th> <th><input type="text" name="p" id="p" value="+7(922)-768-32-45" readonly> </th></tr>
+                   <tr> <th><h4>Email</h4></th> <th><input name="e" type="text" id="e" value=ty67tr@mail.ru  readonly></th></tr>
+                <tr><th style="float:left;vertical-align: top;"><h4 >Расскажите о своих увлечениях:</h4></th>
+                    <th><textarea style="font-size: 1.1em; font-style: normal; resize:none; color:#7c0000; height: 200px;font-family: 'century gothic'; font-weight: lighter; border:none; background-color: #dddddd; float: left;" cols="20" placeholder="Здесь могли бы быть увлечения если бы была подключена база данных"id="otz" readonly></textarea></th></tr>
+                <tr> <th><h4><textarea wrap rows="10" cols="45" placeholder="Введите своих увлечения" name="skil" id="tyl" style="resize:none;"></textarea></h4></th> <th >
+                    <button id="soh" onchange="CheckSkil();"style="font-size: 1em; color:black;font-family: 'Times New Roman';float:center;background-color: #ffffff;" >
+                    Сохранить</button></th></tr>
+          </form> </table>   
+    </div>
+</th></tr></table>
+<table id="fin">
+<th> <h5>Компания ©Диаманд "Все права защищены"</h5></th>
+</table>
+<script>
+    function CheckSkil()
+        { 
+            var pw1=document.getElementById("tyl");
+            var elem = document.getElementById("otz");
+            console.log(elem);
+            if(typeof pw1.textContent !== "undefined")
+            {
+               
+            }else{  
+                elem.setAttribute('value',pw1);
+                console.log(elem);
+            } 
+    }
+    var dobleF = function (event) {
+  var image = document.getElementById("pain");
+  image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+
+</script>
+<script src="script/bot.js"></script>
+</body>
+</html>

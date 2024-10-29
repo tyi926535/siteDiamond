@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>function asaa(){alert("Спасибо за отзыв!")}</script> 
+    <meta charset="utf-8">
+	<title>Laba1/Contacts</title>
+	<link rel="stylesheet" type="text/css" href="Style/style2.css">
+    <link rel="stylesheet" type="text/css" href="Style/bot.css">
+    <style type="">
+    </style>
+
+</head>
+
+<body>
+    <table id="verh">
+        <td style="width: 25%;" id="glav"><a href="laba1.html"><img src="Style/img/glav3.png"></a></td>
+        <td id="zag"><h1>Диаманд</h1></td>
+
+        
+        <td id="form" style="width:40% ;">
+
+        <div id="s1" style="color: #7c0000;">логин:<input type="search" name="q" placeholder=""></div><br> 
+                <div id="s1" style="color: #7c0000;">пароль:    <input type="search" name="q" placeholder=""></div><br>
+                <div id="s2"><input type="submit" value="Войти/Личный кабинет" style="float:left;" onclick="window.open('LK.html')" /><input style="float:right;" readonly type="submit" onclick="window.open('registr2.html')" value="Регистрация"/></div>
+        </td>
+	</table>
+
+    <table id="pol">
+        <p>
+            <td id="swe"><a href="tovars.html">Каталог</a></td>
+            <td id="swe"><a href="contact.html">Обратная связь/Контакты</a></td>
+        <td id="swe"><a href="atel.html">Мы сотрудничаем</a></td>
+        <td id="swe"><a href="col.html">Обработка камня</a></td></p>
+    </table>
+   
+<table id="sort" style="width: 80%; float:right; margin-right: 10%; border: 0px;background-color: #dddddd;margin-top: 16px;" >
+    <tr>
+        <th style="width: 25%; float: left;padding: 0px;text-align:left;">
+        <div id="blleft"  >
+            <p>
+                <br>
+             <a href="new.html">Драгоценные камни</a><br>
+             <a href="akc.html">Натуральные камни</a><br></p>
+        </div>
+    </th>
+    <th style=" width: 75%; float:right;margin-right:0%;padding: 0px;text-align:left;">
+        <div id="osnov">
+        <br>
+        <h2 style="margin: none;">Обратная связь</h2><table>
+        <form onsubmit="asaa();"> 
+            <tr>
+                <th ><h4 style="font-size: 1.2em; font-style: italic; float: left;">Имя</h4></th> <th><input type="search" name="q" placeholder="Введите имя" style="height:30px; float:left" required></th></tr>
+                <tr> <th><h4 style="font-size: 1.2em; font-style: italic; float: left;">Номер телефона</h4></th> <th><input type="tel" name="mobile" id="phone" placeholder="+7(999)999-99-99" style="height:30px; float:left;" required> </th></tr>
+                <tr><th><h4 style="font-size: 1.2em; font-style: italic; float: left;">Email</h4></th> <th><input type="email" id="email" name="n-email" placeholder="Введите email" style="height:30px; float:left;"required></th> </tr>
+                <tr><th><h4 style="font-size: 1.2em; font-style: italic; float: left;">Тема</h4></th> <th>
+                <select id="fr0" name="fruit" required>
+                    <option value="fr0" selected disabled>Выберите тему отзыва</option>
+                    <option value="fr1">проблемы с входом/регистрацией</option>
+                    <option value="fr2">проблемы с сайтом</option>
+                    <option value="fr3">пожелание</option>
+                    <option value="fr4">благодарность</option>
+                    <option value="fr5">другое</option>
+                  </select></th> </tr>
+        <tr><th><h4 style="font-size: 1.2em; font-style: italic; margin-left: 5%;" >Отзыв</h4></th></tr>
+        <tr><td colspan="3"><textarea  wrap rows="10" cols="45" placeholder="Введите отзыв" name="skil" id="tyl" style="resize:none;"></textarea></td></tr>
+        <br>
+         <tr><th><input  type="submit" id="mc-embedded-subscribe " value="Отправить!"></th></tr>
+</form > </table>
+        <table id="form2">
+
+            <tr>
+                <th ><h4 style="font-size: 1.3em; font-family:Cursive">Вы можете связаться с нами </h4></th>
+        <th>
+            <h4 style=" font-style: italic;font-size: 1.2em;">Контактный номер:</h4>
+            <h4 style=" font-style: italic;font-size: 1.2em;">Адрес:</h4>
+            <h4 style=" font-style: italic;font-size: 1.2em;">Email:</h4>
+        </th><br>
+       
+        <th> <h4 style="font-size: 1.2em; font-style: italic ; font-weight: lighter;">+7978568434</h4>
+            <h4 style="font-size: 1.2em; font-style: italic; font-weight: lighter;"> Москва,просп. Мира, 211к2</h4>
+            <h4 style="font-size: 1.2em; font-style: italic;  font-weight: lighter;">diamad34@mail.ru</h4>  
+        </th>
+        </tr>
+        <tr><th colspan="2"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12a0aa88575af22fd1cb075e17b5b8efab2acfd4034e57be7292fcb1277340a2&amp;width=413&amp;height=464&amp;lang=ru_RU&amp;scroll=true"></script></th></tr>
+    </table>
+</table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+                $("#phone").mask("+7 (999) 99-99-999");
+              });
+        </script>
+
+
+<table id="fin">
+
+<th> <h5>Компания ©Диаманд "Все права защищены"</h5></th>
+</table>
+<script src="script/bot.js"></script>
+</body>
+</html>
